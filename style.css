@@ -1,28 +1,51 @@
+/* Base responsive settings */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* Start of the CSS */
+
+
 * {
   margin: 0;
   padding: 0;
 }
+body{
+  align-items: center;
+}
 header {
   position: sticky;
   top: 0;
+  max-width:100%;
 }
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content:center;
   background-color: black;
   color: white;
   padding: 25px 36px;
-  width: 100%;
-  gap: 0px;
+  max-width: 100%;
+  gap:90px;
 }
 
 nav ul {
   display: flex;
   align-items: center;
   justify-self: center;
-  gap: 38px;
+  gap: 58px;
   font-size: 21px;
+  
 }
 nav ul li {
   list-style-type: none;
@@ -36,27 +59,29 @@ nav ul li:first-child {
 }
 nav h3 {
   color: yellow;
-  font-size: 45px;
+  font-size: 30px;
   font-weight: bolder;
+  margin-left: 80px;
 }
 nav ul li a {
   text-decoration: none;
   color: white;
 }
 nav button {
-  padding: 10px;
+  padding: 10px 20px;
   font-size: 20px;
+  font-weight: bolder;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
   color: black;
   border: none;
   margin-right: 150px;
+  margin-left: 30px;
 }
 .home-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
   gap: 162px;
   height: 100vh;
 }
@@ -69,40 +94,57 @@ nav button {
   color: orangered;
 }
 .content {
-  font-size: 34px;
+  font-size:25px;
   padding: 31px;
   margin-left: 100px;
   line-height: 54px;
 }
 
 .btn {
-  padding: 18px;
+  padding: 0px;
   margin: 13px;
   margin-left: 0px;
+  margin-bottom: 10px;
 }
 .btn1 {
   background-color: black;
   color: white;
-  border-radius: 12px;
-  padding: 23px 38px;
+  border-radius: 7px;
+  padding:15px 20px;
   font-size: 18px;
-  margin-left: -16px;
+  margin-left: -5px;
+  margin-bottom: 70px;
 }
 .btn2 {
   background-color: rgb(253, 3, 3);
   color: white;
-  border-radius: 12px;
-  padding: 23px 38px;
+  border-radius: 7px;
+  padding: 15px 20px;
   font-size: 18px;
-  margin-left: -16px;
+  margin-bottom: 70px;
 }
 .para {
-  font-size: 29px;
+  font-size: 19px;
+}
+.para p{
+  margin-top: 20px;
+  margin-bottom:0px;
+  list-style: none;
+
+}
+.img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 100px;
+  margin-bottom: 89px;
 }
 .img-box img {
   border-radius: 50%;
-  width: 400px;
-  margin: 0px 300px 50px 0px;
+  width: 600px;
+  margin-right: 200px;
+  box-shadow:5px 5px 8px black;
+  
 }
 nav button:hover {
   background-color: orangered;
@@ -149,16 +191,22 @@ nav a:active {
   margin-top: 60px;
   gap: 0px;
   height: 100vh;
+ 
 }
-
+.info{
+  color: white;
+  margin-left: 231px;
+  width: 50%;
+  margin-top:-50px;
+}
 .info h1 {
   font-weight: 600;
-  font-size: 2vw;
+  font-size: 3vw;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .info h1 span {
   font-weight: 600;
-  font-size: 2vw;
+  font-size: 3vw;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: orangered;
 }
@@ -176,7 +224,7 @@ nav a:active {
 }
 .info p {
   font-weight: 300;
-  font-size: 1vw;
+  font-size: 1.3vw;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 20px;
 }
@@ -189,9 +237,12 @@ nav a:active {
   font-size: 25px;
 }
 .about .img-box img {
-  margin: 180px;
-  margin-top: 300px;
+  margin: 200px 0px 150px 300px;
   box-shadow: 0px 0px 50px orangered;
+ 
+}
+.about .img-box{
+  margin-left: 200px;
 }
 .about .info {
   margin-right: 400px;
@@ -203,8 +254,11 @@ nav a:active {
 
 .contactform {
   height: 100vh;
+  width:80%;
+  margin: 0 auto;
   background-color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
 }
 .contact-form h2 {
   text-align: center;
@@ -221,19 +275,30 @@ nav a:active {
   margin: 1rem auto;
   text-align: center;
   margin-bottom: 3em;
+
 }
 
 .contact-form .form .input-box input,
 .contact-form .form textarea {
-  width: 100%;
-  padding: 1.5em;
+  width: 80%;
+  padding: 1.2em;
   font-size: 20px;
   color: black;
   background-color: white;
   border-radius: 0.8rem;
-  margin: 1rem;
+  margin: 1rem  1rem 0;
+  
 }
-
+.btn3 {
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  padding: 23px 38px;
+  font-size: 18px;
+  margin-left: -16px;
+  margin-bottom: 70px;
+ 
+}
 footer {
   position: relative;
   bottom: 0;
